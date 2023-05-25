@@ -1,38 +1,304 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Login-form,
+.Registration-form {
+  width: 50%;
+  height: 96vh;
+  margin-left: 25%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.Registration-form .form,
+.Login-form .form {
+  border: 1px solid chartreuse;
+  padding: 30px;
+  background-color: chocolate;
+  color: #fff;
+  width: 400px;
+  height: 400px;
+}
+
+.Sidebar {
+  min-width: 12%;
+  height: 100%;
+  background-color: #111;
+  color: wheat;
+  display: flex;
+  flex-direction: column;
+}
+.Sidebar a {
+  width: max-content;
+  margin-left: 20px;
+  margin-right: 40px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #777;
+  font-weight: 600;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #999;
+  transition: 0.4s;
+}
+
+.Sidebar a:active {
+  color: chocolate;
+  border-bottom: 3px solid chocolate;
+}
+
+.Sidebar a:hover {
+  color: chocolate;
+  border-bottom: 3px solid chocolate;
+}
+
+.Dashboard {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: #fff;
+}
+.Income {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: tomato;
+}
+.myIncome,
+.myExpenses {
+  display: flex;
+  flex-direction: column;
+}
+
+.myExpenses button {
+  width: 150px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.myIncome button {
+  width: 150px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.Profile {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: black;
+}
+
+.Profile .Sidebar {
+  background-color: chocolate;
+}
+.Profile .Sidebar a {
+  color: whitesmoke;
+  border-bottom: 1px solid wheat;
+}
+
+.Expenses {
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  background-color: firebrick;
+}
+.Sidebar h1 {
+  text-align: center;
+  font-weight: 900;
+  color: #fff;
+  font-size: 26px;
+  margin-bottom: 90px;
+  margin-top: 20px;
+}
+
+.Viewplane {
+  width: 88%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: chocolate;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Viewplane h1 {
+  margin-left: 40%;
+  margin-top: 12px;
+  color: whitesmoke;
+  font-weight: 700;
+  /* border: 1px solid wheat; */
+  width: max-content;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Top {
+  width: 90%;
+  height: 40%;
+  display: flex;
+  /* margin-top: 20px; */
+  /* margin-left: 30px; */
+  background-color: #fff;
+  padding-top: 30px;
+  border-radius: 0 14px 14px 0;
+  transition: 0.9s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Top:hover {
+  margin-left: 90px;
+  border-radius: 14px;
+}
+.Bottom {
+  width: 90%;
+  display: flex;
+  height: 40%;
+  background-color: #111;
+  /* margin-top: 20px; */
+  /* margin-left: 30px; */
+  border-radius: 0 14px 14px 0;
+  padding-top: 40px;
+  transition: 0.9s;
+}
+.Bottom:hover {
+  margin-left: 90px;
+  border-radius: 14px;
+}
+
+.left {
+  width: 30%;
+  height: 80%;
+  margin-left: 20px;
+  border-radius: 12px;
+background: #5fb475;
+box-shadow: inset -6px -6px 12px #5aab6f,
+            inset 6px 6px 12px #64bd7b;
+}
+.mid {
+  width: 30%;
+  height: 80%;
+  margin-left: 20px;
+  border-radius: 12px;
+background: #5fb475;
+box-shadow: inset -6px -6px 12px #5aab6f,
+            inset 6px 6px 12px #64bd7b;
+}
+.right {
+  width: 30%;
+  height: 80%;
+  margin-left: 20px;
+  border-radius: 12px;
+background: #5fb475;
+box-shadow: inset -6px -6px 12px #5aab6f,
+            inset 6px 6px 12px #64bd7b;
+}
+.left2 {
+  width: 40%;
+  height: 80%;
+  margin-left: 20px;
+  border-radius: 12px;
+background: #5fb475;
+box-shadow: inset -6px -6px 12px #5aab6f,
+            inset 6px 6px 12px #64bd7b;
+}
+.right2 {
+  width: 40%;
+  height: 80%;
+  margin-left: 20px;
+  border-radius: 12px;
+background: #5fb475;
+box-shadow: inset -5px -5px 10px #5aab6f,
+inset 5px 5px 10px #64bd7b;
+transform:rotate3d(45deg);
+}
+
+.prof {
+  width: 88%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.prof h1 {
+  color: chocolate;
+  text-align: center;
+  font-weight: 800;
+}
+.prfl {
+  width: 900px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: cornsilk; */
+  margin-left: 20px;
+  margin-top: 1%;
+  /* border: 1px solid black; */
+  color: black;
+  /* padding-top: 20px; */
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.img {
+  width: max-content;
+  height: 42%;
+  /* background-color: powderblue; */
+  border-radius: 12px;
+  padding: 10px;
+  margin-top: 20px;
+  border: 3px solid powderblue;
+}
+.name {
+  width: max-content;
+  border-radius: 12px;
+  padding: 10px;
+  margin-top: 20px;
+  border: 4px solid powderblue;
+  height: 45%;
+}
+
+.prfl h2,
+p {
+  font-size: 26px;
+  font-weight: 500;
+  color: chocolate;
+}
+.prfl h2 {
+  font-weight: 700;
+}
+
+.prfl span {
+  font-weight: 500;
+  font-size: 16px;
+  font-style: oblique;
+  color: wheat;
+}
+.prfl button {
+  padding: 10px;
+  width: max-content;
+  height: max-content;
+  background-color: darkred;
   color: white;
+  border: none;
+  margin-left: 70px;
+  border-radius: 7px;
 }
 
-.App-link {
-  color: #61dafb;
+.Income table {
+  width: 900px;
+  height: 300px;
+  /* margin-left: 30%; */
+  margin-top: 10%;
+  border-radius: 0 14px 14px 0;
+  transition: 0.6s;
+  margin-left: 90px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Expenses table {
+  width: 900px;
+  height: 300px;
+  /* margin-left: 30%; */
+  margin-top: 10%;
+  border-radius: 0 14px 14px 0;
+  transition: 0.6s;
+  margin-left: 90px;
 }
