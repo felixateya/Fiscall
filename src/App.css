@@ -284,8 +284,7 @@ p {
 }
 
 .Income table {
-  width: 60%;
-  height: 40%;
+ 
   /* margin-left: 30%; */
   margin-top: 10%;
   border-radius: 0 14px 14px 0;
@@ -294,8 +293,7 @@ p {
 }
 
 .Expenses table {
-  width: 60%;
-  height: 40%;
+  
   /* margin-left: 30%; */
   margin-top: 10%;
   border-radius: 0 14px 14px 0;
