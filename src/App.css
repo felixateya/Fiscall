@@ -30,6 +30,7 @@
   min-width: 12%;
   height: 100%;
   background-color: #111;
+  border: 3px solid chocolate;
   color: wheat;
   display: flex;
   flex-direction: column;
@@ -62,6 +63,7 @@
   height: 100vh;
   display: flex;
   background-color: #fff;
+  scroll-behavior:smooth;
 }
 .Income {
   width: 100%;
@@ -104,7 +106,7 @@
   width: 100%;
   display: flex;
   height: 100vh;
-  background-color: firebrick;
+  background-color: grey;
 }
 .Sidebar h1 {
   text-align: center;
@@ -284,20 +286,5 @@ p {
   border-radius: 7px;
 }
 
-.Income table {
- 
-  /* margin-left: 30%; */
-  margin-top: 10%;
-  border-radius: 0 14px 14px 0;
-  transition: 0.6s;
-  margin-left: 90px;
-}
 
-.Expenses table {
-  
-  /* margin-left: 30%; */
-  margin-top: 10%;
-  border-radius: 0 14px 14px 0;
-  transition: 0.6s;
-  margin-left: 90px;
-}
+
